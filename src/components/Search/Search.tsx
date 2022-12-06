@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Search.css";
 
-const inputSearch = ({ onSearch }) => {
+const inputSearch = ({ onSearch }: any) => {
   const [input, setInput] = useState("");
 
   function handleSearch() {

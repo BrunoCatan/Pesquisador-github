@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Cards.css";
 
-const Cards = ({ data }) => {
+const Cards = ({ data }: any) => {
   const [listRepository, setListRepository] = useState(data);
 
   useEffect(() => {

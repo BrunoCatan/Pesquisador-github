@@ -12,7 +12,7 @@ function Home() {
   const [totalCount, setTotalCount] = useState([]);
   const [offset, setOffset] = useState(0);
 
-  function handleSearch(data) {
+  function handleSearch(data: any) {
     setSearch(data.input);
   }
 
@@ -29,8 +29,6 @@ function Home() {
         search,
       };
     }
-
-    console.log(offset);
 
     fetch(
       `https://api.github.com/search/repositories?q=${search}&per_page=12&page=${offset}`
