@@ -9,10 +9,10 @@ const limit = 12;
 function Home() {
   const [repositories, setRepositories] = useState([]);
   const [search, setSearch] = useState([]);
-  const [totalCount, setTotalCount] = useState({});
+  const [totalCount, setTotalCount] = useState([]);
   const [offset, setOffset] = useState(0);
 
-  function handleSearch(data: any) {
+  function handleSearch(data) {
     setSearch(data.input);
   }
 
@@ -49,7 +49,7 @@ function Home() {
         <div className="noResearch">Sem repositórios, faça sua pesquisa...</div>
       )}
       {totalCount >= 1 && (
-        <div className="results">Total de resultado: {totalCount} </div>
+        <div className="results">Total de resultado: {totalCount}</div>
       )}
       <Cards data={repositories} />
       {totalCount && (

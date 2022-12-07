@@ -1,10 +1,10 @@
 import "./Pagination.css";
 
-const MaxItems = 10;
+const MaxItems = 9;
 const MaxLeft = (MaxItems - 1) / 2;
 
-const Pagination = ({ limit, offset, setOffset }: any) => {
-  console.log(limit);
+const Pagination = ({ limit, offset, setOffset }) => {
+  console.log(limit, offset);
   const current = offset ? offset / limit + 1 : 1;
   const frist = Math.max(current - MaxLeft, 1);
 
