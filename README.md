@@ -35,7 +35,7 @@ Com ele você consegui pesquisar coisa dentro do github, desde usuários a repos
 
 ## 👨🏻‍💻 Deploy
 
-<a target="_blank" href="#">CLICK PARA ACESSAR!</a>
+<a target="_blank" href="https://pesquisador-github.vercel.app/">CLICK PARA ACESSAR!</a>
 
 ## 💻 Como iniciar o projeto
 
