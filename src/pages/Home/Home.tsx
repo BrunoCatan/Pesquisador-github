@@ -9,27 +9,14 @@ const limit = 12;
 function Home() {
   const [repositories, setRepositories] = useState([]);
   const [search, setSearch] = useState([]);
-  const [totalCount, setTotalCount] = useState([]);
+  const [totalCount, setTotalCount] = useState(0);
   const [offset, setOffset] = useState(0);
 
-  function handleSearch(data) {
+  function handleSearch(data: any) {
     setSearch(data.input);
   }
 
   useEffect(() => {
-    const query = {
-      page: {
-        limit,
-        offset,
-      },
-    };
-
-    if (search) {
-      query.filter = {
-        search,
-      };
-    }
-
     fetch(
       `https://api.github.com/search/repositories?q=${search}&per_page=12&page=${offset}`
     )
