@@ -30,7 +30,7 @@ function Home() {
 
   return (
     <div className="container">
-      <h1>Pesquisa GitHub</h1>
+      <h1>Pesquisador GitHub</h1>
       <Search onSearch={handleSearch} />
       {search.length === 0 && (
         <div className="noResearch">Sem repositórios, faça sua pesquisa...</div>
